@@ -1,0 +1,46 @@
+/* Subtle fade/slide reveal for scroll */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(16px); }
+  to { opacity:1; transform:none; }
+}
+.reveal-up.is-in {
+  animation: fadeUp .6s ease forwards;
+}
+
+/* Event-specific card refinements */
+.events-served {
+  padding: 60px 0;
+}
+.events-served .section-head {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.events-served .section-head .big_title {
+  margin-bottom: 6px;
+}
+
+/* Make sl-cards slightly softer */
+.sl-card {
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+.sl-card__media {
+  border-bottom: 1px solid #ffe6cc;
+}
+.sl-card__body {
+  background: linear-gradient(180deg,#fff 0%,#fffaf5 100%);
+}
+
+/* Card hover polish */
+.sl-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 34px rgba(0,0,0,.08);
+}
+
+/* Optional: tag hover */
+.sl-tag:hover {
+  background:#ffe8d4;
+  border-color:#ffcf9e;
+  cursor:default;
+}
